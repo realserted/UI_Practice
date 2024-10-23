@@ -2,12 +2,16 @@ import React from "react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { DotPatternDemo } from "@/components/DotPattern";
 import { MarqueeDemo } from "@/components/MarqueeHorizontal";
+import { BentoDemo } from "@/components/BentoGrid";
+import { MeteorDemo } from "@/components/Meteor";
+
 
 const Lester = () => {
   return (
     <div>
-      <DotPatternDemo />
+      <MeteorDemo />
       <MarqueeDemo />
+      <BentoDemo />
     </div>
   );
 };
