@@ -1,4 +1,3 @@
-import { DotPatternDemo } from "@/components/DotPattern";
 import { MarqueeDemo } from "@/components/MarqueeHorizontal";
 import { BentoDemo } from "@/components/BentoGrid";
 import { MeteorDemo } from "@/components/Meteor";
