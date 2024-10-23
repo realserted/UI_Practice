@@ -18,13 +18,15 @@ export default function App() {
         <div className="fixed top-4 left-0 w-full z-50">
           <SlideTabsExample />
         </div>
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Navigate to="/lester" replace />} />
-          <Route path="/lester" element={<Lester />} />
-          <Route path="/diane" element={<Diane />} />
-          <Route path="/alforque" element={<Alforque />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
+        <main className="overflow-hidden">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Navigate to="/lester" replace />} />
+            <Route path="/lester" element={<Lester />} />
+            <Route path="/diane" element={<Diane />} />
+            <Route path="/alforque" element={<Alforque />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </main>
       </ThemeProvider>
     </Router>
   );
